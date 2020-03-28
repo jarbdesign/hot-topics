@@ -1,6 +1,6 @@
 let navItems = document.querySelectorAll(".nav");
 let container = document.querySelector(".container");
-let url = "http://localhost/MTM1526_Client-Side_Development/final_assignment/partials/home.html";
+let url = "./partials/home.html";
 
 function changePage(e){
   e.preventDefault();
