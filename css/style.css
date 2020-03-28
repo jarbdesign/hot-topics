@@ -1,0 +1,144 @@
+* {box-sizing: border-box;}
+.clearfix{clear: both;}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #302f2f;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+body {
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    background-color: #3feee6;
+    color: #302f2f;
+}
+img {
+    width: 100%; 
+    display: inline-block;
+}
+.logo, h1, h2{
+    color: #fc4445;
+}
+header{
+    background-image: url(../img/money-2724235_1920.jpg);
+    background-size: cover;
+    background-color: #3feee6;
+    background-blend-mode: overlay;
+}
+.wrapper{
+    max-width: 60rem;
+    padding: 1em;
+    margin: 0 auto;
+    text-align: center;
+}
+.logo {
+    text-align: center;
+    font-size: 2.5em;
+}
+.logo span{
+    display: block;
+    font-size: .5em;
+}
+ul{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.social ul{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+.social ul a{
+    color: #fc4445;
+}
+.social ul a:hover{
+    color: #cafafe;
+}
+.nav-bar li a{
+    padding: .8em;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1em;
+    background-color: #3feee663;
+    font-size: 1rem;
+}
+.nav-bar li a:hover{
+    background-color: #3feee6;
+}
+p{
+    text-align: left;
+}
+.tagline{
+    display: none;
+    padding: 1em;
+}
+main{
+    
+    background-color: #cafafe;
+}
+
+@media screen and (min-width: 35rem) {
+    .logo span{
+        display: none;
+    }
+    .tagline{
+        display: block;
+    }
+    ul{
+        grid-template-columns: 1fr 1fr;
+    }
+    .home-page figure {
+        width: 40%;
+        float: left;
+        margin: 0 1.5em 1.5em 0;
+        text-align: left;
+    }
+    .portfolio{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .portfolio figure{
+        margin: 1.2em;
+    }
+}
+
+@media screen and (min-width: 50rem) {
+    .wrapper{
+        text-align: left;
+    }
+    .home-page{
+        display: inline-block;
+    }
+    .home-page figure {
+        width: 30%;
+    }
+    .nav-bar li a{
+        margin-bottom: 0;
+    }
+    .logo {
+        width: auto;
+    }
+    .nav-bar{
+        width: 60%;
+    }
+    .main-nav{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        align-items: center;
+        text-align: center;
+    }
+    .portfolio{
+        text-align: center;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .social{
+        width: 30%;
+    } 
+}
